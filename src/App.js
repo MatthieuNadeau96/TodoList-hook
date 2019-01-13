@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
+export default () => {
+    const [count, setCount] = useState(0);
+
     return (
-      <div className="App">
-
-      </div>
+        <div className="App">
+            <div>count: {count}</div>
+            <button onClick={() => setCount(count + 1)}>+</button>
+        </div>
     );
-  }
-}
-
-export default App;
+};
