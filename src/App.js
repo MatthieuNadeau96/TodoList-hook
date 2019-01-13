@@ -22,10 +22,12 @@ export default () => {
                             onClick={() => toggleComplete(i)}
                             style={{
                                 textDecoration: complete ? 'line-through' : ''
-                            }}>{text}</div>
+                            }}
+                        >{text}</div>
                     ))
                 }
             </div>
+            <button onClick={() => setTodos([])}>reset</button>
         </div>
     );
 };
